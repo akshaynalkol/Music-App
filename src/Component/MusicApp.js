@@ -17,16 +17,16 @@ export default function MusicApp() {
 
         setTracks(data.tracks.items);
         setIsLoading(false);
-    }
+    }                     
 
-    useEffect(() => {
-        getTracks();
+    useEffect(() => {            
+        getTracks();          
     }, []);
-
+        
 
     return (
         <>
-            <nav className='navbar navbar-expand-lg bg-dark navbar-dark'>
+            <nav className='navbar navbar-expand-md bg-dark navbar-dark'>
                 <div className="container">
                     <a href='#' className='navbar-brand'>
                         <h3 className='text-info'><i className="fa-solid fa-music"></i> AKMusic</h3>
@@ -34,7 +34,7 @@ export default function MusicApp() {
                     <button className='navbar-toggler' data-bs-toggle='collapse' data-bs-target='#navbarContent'>
                         <span className='navbar-toggler-icon'></span>
                     </button>
-                    <div className='collapse navbar-collapse' id='navbarContent'>
+                    <div className='collapse navbar-collapse mt-md-0 mt-3' id='navbarContent'>
                         <form className='d-flex ms-auto' onSubmit={(e) => getTracks(e)}>
                             <input type='search' className='form-control me-3' placeholder='Search' value={keyword}
                                 onChange={(e) => setKeyword(e.target.value)} />

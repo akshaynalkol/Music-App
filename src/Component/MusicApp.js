@@ -19,9 +19,9 @@ export default function MusicApp() {
         setIsLoading(false);
     }
 
-    // useEffect(() => {
-    //     getTracks();
-    // }, []);
+    useEffect(() => {
+        getTracks();
+    }, []);
 
 
     return (

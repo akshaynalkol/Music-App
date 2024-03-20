@@ -1,6 +1,7 @@
 <h1>Music App</h1>
 
 Link - https://akshaynalkol-music-app.netlify.app/
+<hr>
 
 # Getting Started with Create React App
 
